@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+     - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    ports:
+      - '8080:80'
+
+  web:
+    depends_on:
+      - db
+    build: .
+    volumes:
+      - ./html:/var/www/html
+      - ./config:/usr/local/etc/php
+    ports:
+      - "80:80"
+
+volumes:
+  db_data:
