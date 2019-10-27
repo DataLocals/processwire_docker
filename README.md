@@ -21,9 +21,8 @@ If you want to run your exisisting project you need to pull and configure it bef
 ```shell
 $ git clone https://github.com/DataLocalsUG/processwire_docker
 $ cd processwire_docker
-$ mkdir html
-$ cd html
 $ git clone <url-of-your-project>
+$ mv <name-of-your-projekt> html
 ```
 
 > Or you could also just add the repo of your existing project into the `init.sh` git clone part instead of the pull from the Processwire repo.
