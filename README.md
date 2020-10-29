@@ -44,11 +44,11 @@ To do so you need to manipulate the credentials of your application normally loc
 
 ```php
 $config->dbHost = 'db';  
-$config->dbName = 'name-of-your-database';  
+$config->dbName = '<name-of-your-database>';  
 $config->dbUser = 'root';  
 $config->dbPass = 'root';  
 $config->dbPort = '3306';  
-$config->dbEngine = 'name-of-your-db-engine';  
+$config->dbEngine = '<name-of-your-db-engine>';  
 ```
 
 ### 4. Fire up docker
