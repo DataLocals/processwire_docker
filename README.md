@@ -7,7 +7,7 @@ This image serves as a starting point for Processwire projects.
 Get an Processwire application running the fastes way.
 
 ```shell
-$ git clone https://github.com/DataLocalsUG/processwire_docker
+$ git clone https://github.com/DataLocals/processwire_docker
 $ cd processwire_docker
 $ docker-compose up
 ```
@@ -19,7 +19,7 @@ If you want to run your exisisting project you need to pull and configure it bef
 ### 1. Pull the current repo
 
 ```shell
-$ git clone https://github.com/DataLocalsUG/processwire_docker
+$ git clone https://github.com/DataLocals/processwire_docker
 $ cd processwire_docker
 $ git clone <url-of-your-project>
 $ mv <name-of-your-projekt> html
